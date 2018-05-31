@@ -1,0 +1,19 @@
+// 1. Import the initial variables
+@import "~bulma/sass/utilities/_all";
+
+// 2. Set your own initial variables
+
+$grey-light: 7f7f7f;
+$red: #ce6b6b;
+$green: #a9c476;
+$yellow: #e0d4a0;
+$brown: #bca291;
+$purple: #c4a7d8;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+$family-sans-serif: 'Roboto', sans-serif;
+$family-serif: 'Roboto Slab', serif;
+
+// 3. Set the derived variables
+$primary: #40484c;
+$family-primary: $family-serif;

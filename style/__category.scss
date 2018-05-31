@@ -1,0 +1,17 @@
+.has-background {
+  &--gusti {
+    background-color: $red;
+  }
+  &--voli {
+    background-color: $green;
+  }
+  &--radici {
+    background-color: $yellow;
+  }
+  &--pausa {
+    background-color: $brown;
+  }
+  &--pensieri {
+    background-color: $purple;
+  }
+}
