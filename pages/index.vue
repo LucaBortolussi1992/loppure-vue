@@ -2,6 +2,14 @@
     <div id="home">
       <div class="container is-widescreen">
         <the-hader/>
+        <main class="columns">
+          <aside class="column is-one-fifth">fdsfdsf</aside>
+          <div class="column is-three-fifths article-box">
+            <article>Cia</article>
+            <article>fdsf</article>
+            <article>fdsfds</article>
+          </div>
+        </main>
       </div>
   </div>
 </template>

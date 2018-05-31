@@ -3,7 +3,7 @@
     <div class="columns is-multiline">
       <div class="column is-one-fifths has-text-centered">
         <div class="category-grid category-grid--gusti">
-          <div class="category-grid__image">
+          <div class="category-grid__image category-grid__image--gusti">
             <img :src="LogoGusti" alt="">
           </div>
           <div class="category-grid__title title is-5">
@@ -16,7 +16,7 @@
       </div>
       <div class="column is-one-fifths has-text-centered">
         <div class="category-grid category-grid--voli">
-          <div class="category-grid__image">
+          <div class="category-grid__image category-grid__image--voli">
             <img :src="LogoVoli" alt="">
           </div>
           <div class="category-grid__title title is-5">
@@ -29,7 +29,7 @@
       </div>
       <div class="column is-one-fifths has-text-centered">
         <div class="category-grid category-grid--radici">
-          <div class="category-grid__image">
+          <div class="category-grid__image category-grid__image--radici">
             <img :src="LogoRadici" alt="">
           </div>
           <div class="category-grid__title title is-5">
@@ -42,7 +42,7 @@
       </div>
       <div class="column is-one-fifths has-text-centered">
         <div class="category-grid category-grid--pausa">
-          <div class="category-grid__image">
+          <div class="category-grid__image category-grid__image--pausa">
             <img :src="LogoPausa" alt="">
           </div>
           <div class="category-grid__title title is-5">
@@ -55,7 +55,7 @@
       </div>
       <div class="column is-one-fifths has-text-centered">
         <div class="category-grid category-grid--pensieri">
-          <div class="category-grid__image">
+          <div class="category-grid__image category-grid__image--pensieri">
             <img :src="LogoPensieri" alt="">
           </div>
           <div class="category-grid__title title is-5">
@@ -93,44 +93,47 @@
 <style lang="scss" scoped>
   @import "../../style/main";
 
+  .column {
+    padding: 2rem;
+  }
+
   .category-grid {
-    &--gusti {
-      &:hover {
-        background-color: $red;
-      }
-    }
-    &--voli {
-      &:hover {
-        background-color: $green;
-      }
-    }
-    &--radici {
-      &:hover {
-        background-color: $yellow;
-      }
-    }
-    &--pausa {
-      &:hover {
-        background-color: $brown;
-      }
-    }
-    &--pensieri {
-      &:hover {
-        background-color: $purple;
-      }
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+
+    &:hover .category-grid__image img {
+      transform: scale(1.2);
     }
 
     &__image {
       display: block;
+
       & img {
         max-width: 60px;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
+        transition: transform .3s ease-in-out;
+      }
+
+      &--gusti {
+        background-color: rgba(206, 107, 107, 0.35);
+      }
+      &--voli {
+        background-color: rgba(169, 196, 118, 0.35);
+      }
+      &--radici {
+        background-color: rgba(224, 212, 160, 0.35);;
+      }
+      &--pausa {
+        background-color: rgba(188,162,145,0.35);
+      }
+      &--pensieri {
+        background-color: rgba(196,167,216,0.35);
       }
     }
 
     &__title {
-      /*padding-bottom: 1rem;*/
-      /*border-bottom: 2px solid;*/
+      padding-top: 1rem;
 
       & a {
         color: $primary;
@@ -152,17 +155,9 @@
       }
     }
 
-      &__image {
-        display: block;
-        & img {
-          max-width: 60px;
-          margin-bottom: 1rem;
-        }
-    }
-
     &__content {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      background-color: $white;
+      padding-bottom: 1rem;
     }
 
   }

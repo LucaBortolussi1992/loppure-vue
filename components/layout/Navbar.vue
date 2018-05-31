@@ -2,9 +2,9 @@
   <nav class="navbar has-shadow is-fixed-top">
     <div class="container is-widescreen">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-        </a>
+        <nuxt-link class="navbar-item" to="">
+          <img :src="logo" alt="loppure" width="112" height="28">
+        </nuxt-link>
         <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
           <span></span>
           <span></span>
@@ -33,8 +33,15 @@
 </template>
 
 <script>
+  import logo from '../../assets/loppure_logos/loppure-logo-nero.svg'
+
   export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    data() {
+      return {
+        logo
+      }
+    }
   }
 </script>
 
