@@ -3,17 +3,18 @@
 
 // 2. Set your own initial variables
 
-$grey-light: 7f7f7f;
+$grey-light: #7f7f7f;
 $red: #ce6b6b;
 $green: #a9c476;
 $yellow: #e0d4a0;
 $brown: #bca291;
 $purple: #c4a7d8;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:100,300,400,500,700,900i');
 $family-sans-serif: 'Roboto', sans-serif;
 $family-serif: 'Roboto Slab', serif;
 
 // 3. Set the derived variables
 $primary: #40484c;
 $family-primary: $family-serif;
+$text: $grey-light;

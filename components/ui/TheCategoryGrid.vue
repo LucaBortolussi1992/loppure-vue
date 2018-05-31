@@ -10,7 +10,7 @@
             <nuxt-link to="/">Gusti della Terra</nuxt-link>
           </div>
           <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae.</p>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
       <div class="column is-one-fifths has-text-centered">
         <div class="category-grid category-grid--pensieri">
           <div class="category-grid__image">
-            <img :src="LogoGusti" alt="">
+            <img :src="LogoPensieri" alt="">
           </div>
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Pensieri tra le pagine</nuxt-link>
@@ -75,6 +75,7 @@
   import LogoPausa from '../../assets/logo_category/loppure-pausa-caffe.svg';
   import LogoRadici from '../../assets/logo_category/loppure-radici-nel-tempo.svg';
   import LogoVoli from '../../assets/logo_category/loppure-voli-sul-territorio.svg';
+  import LogoPensieri from '../../assets/logo_category/loppure-pensieri-tra-le-pagine.svg';
 
   export default {
     data() {
@@ -82,7 +83,8 @@
         LogoGusti,
         LogoPausa,
         LogoRadici,
-        LogoVoli
+        LogoVoli,
+        LogoPensieri
       }
     }
   }
@@ -93,31 +95,26 @@
 
   .category-grid {
     &--gusti {
-      border-color: $red;
       &:hover {
         background-color: $red;
       }
     }
     &--voli {
-      border-color: $green;
       &:hover {
         background-color: $green;
       }
     }
     &--radici {
-      border-color: $yellow;
       &:hover {
         background-color: $yellow;
       }
     }
     &--pausa {
-      border-color: $brown;
       &:hover {
         background-color: $brown;
       }
     }
     &--pensieri {
-      border-color: $purple;
       &:hover {
         background-color: $purple;
       }
@@ -126,12 +123,46 @@
     &__image {
       display: block;
       & img {
-        max-width: 100px;
+        max-width: 60px;
+        margin-bottom: 1rem;
       }
     }
 
-    &__title a {
-    color: $primary;
+    &__title {
+      /*padding-bottom: 1rem;*/
+      /*border-bottom: 2px solid;*/
+
+      & a {
+        color: $primary;
+      }
+      &--gusti {
+        border-color: $red;
+      }
+      &--voli {
+        border-color: $green;
+      }
+      &--radici {
+        border-color: $yellow;
+      }
+      &--pausa {
+        border-color: $brown;
+      }
+      &--pensieri {
+        border-color: $purple;
+      }
+    }
+
+      &__image {
+        display: block;
+        & img {
+          max-width: 60px;
+          margin-bottom: 1rem;
+        }
+    }
+
+    &__content {
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
 
   }
