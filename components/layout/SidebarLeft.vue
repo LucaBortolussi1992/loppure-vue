@@ -16,7 +16,6 @@
     name: 'LeftSidebar',
     components: {
       Mounth,
-      Rubriche,
       City
     },
   }

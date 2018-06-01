@@ -1,0 +1,14 @@
+//$card-color	$text
+//$card-background-color	$white
+$card-shadow:	0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+//$card-header-color	$text-strong
+//$card-header-shadow	0 1px 2px rgba($black, 0.1)
+//$card-header-weight	$weight-bold
+//$card-header-background-color	transparent
+//$card-content-background-color	transparent
+//$card-footer-border-top	1px solid $border
+//$card-footer-background-color	transparent
+
+@import "~bulma/sass/components/card";
+@import "~bulma/sass/components/media";
+@import "~bulma/sass/elements/image";

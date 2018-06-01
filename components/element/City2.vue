@@ -2,7 +2,10 @@
   <div>
     <h3 class="list-header subtitle">Città</h3>
     <div class="columns is-multiline">
-      <div class="column is-half has-text-centered">
+      <div class="column
+      is-one-third-fullhd
+      is-half-widescreen
+      has-text-centered">
         <div class="category-grid category-grid--gusti">
           <div class="category-grid__image category-grid__image--gusti">
             <img :src="pordenone" alt="">
@@ -12,7 +15,10 @@
           </div>
         </div>
       </div>
-      <div class="column is-half has-text-centered">
+      <div class="column
+      is-one-third-fullhd
+      is-half-widescreen
+      has-text-centered">
         <div class="category-grid category-grid--voli">
           <div class="category-grid__image category-grid__image--voli">
             <img :src="udine" alt="">
@@ -22,7 +28,10 @@
           </div>
         </div>
       </div>
-      <div class="column is-half has-text-centered">
+      <div class="column
+      is-one-third-fullhd
+      is-half-widescreen
+      has-text-centered">
         <div class="category-grid category-grid--radici">
           <div class="category-grid__image category-grid__image--radici">
             <img :src="trieste" alt="">
@@ -32,7 +41,10 @@
           </div>
         </div>
       </div>
-      <div class="column is-half has-text-centered">
+      <div class="column
+      is-one-third-fullhd
+      is-half-widescreen
+      has-text-centered">
         <div class="category-grid category-grid--pausa">
           <div class="category-grid__image category-grid__image--pausa">
             <img :src="gorizia" alt="">
@@ -42,7 +54,10 @@
           </div>
         </div>
       </div>
-      <div class="column is-half has-text-centered">
+      <div class="column
+      is-one-third-fullhd
+      is-half-widescreen
+      has-text-centered">
         <div class="category-grid category-grid--pensieri">
           <div class="category-grid__image category-grid__image--pensieri">
             <img :src="treviso" alt="">
@@ -97,6 +112,7 @@
       display: block;
 
       & img {
+        padding-top: 0.8rem;
         margin: 1rem;
         transition: transform 3s ease-in-out;
       }
