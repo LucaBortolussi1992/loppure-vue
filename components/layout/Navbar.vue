@@ -33,7 +33,7 @@
 </template>
 
 <script>
-  import logo from '../../assets/loppure_logos/loppure-logo-nero.svg'
+  import logo from '../../assets/logos_loppure/loppure-logo-nero.svg'
 
   export default {
     name: 'Navbar',

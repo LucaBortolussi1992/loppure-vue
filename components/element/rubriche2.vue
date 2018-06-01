@@ -1,20 +1,18 @@
 <template>
-  <header>
+  <div>
+    <h3 class="list-header subtitle">Rubriche</h3>
     <div class="columns is-multiline">
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--gusti">
           <div class="category-grid__image category-grid__image--gusti">
             <img :src="LogoGusti" alt="">
           </div>
           <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Gusti della Terra</nuxt-link>
-          </div>
-          <div class="category-grid__content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae.</p>
+            <nuxt-link to="/">Gusti della terra</nuxt-link>
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--voli">
           <div class="category-grid__image category-grid__image--voli">
             <img :src="LogoVoli" alt="">
@@ -22,12 +20,9 @@
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Voli sul territorio</nuxt-link>
           </div>
-          <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptate.
-          </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--radici">
           <div class="category-grid__image category-grid__image--radici">
             <img :src="LogoRadici" alt="">
@@ -35,12 +30,9 @@
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Radici nel tempo</nuxt-link>
           </div>
-          <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, rerum?
-          </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--pausa">
           <div class="category-grid__image category-grid__image--pausa">
             <img :src="LogoPausa" alt="">
@@ -48,12 +40,9 @@
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Pausa caffè</nuxt-link>
           </div>
-          <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptatum.
-          </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--pensieri">
           <div class="category-grid__image category-grid__image--pensieri">
             <img :src="LogoPensieri" alt="">
@@ -61,13 +50,10 @@
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Pensieri tra le pagine</nuxt-link>
           </div>
-          <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, qui.
-          </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -94,7 +80,6 @@
   @import "../../style/main";
 
   .column {
-    padding: 2rem;
   }
 
   .category-grid {
@@ -111,29 +96,30 @@
 
       & img {
         max-width: 60px;
-        margin: 1rem 0;
+        margin: 1rem;
         transition: transform .3s ease-in-out;
       }
 
       &--gusti {
-        background-color: $faded-red;
+        background-color: $faded-purple;
       }
       &--voli {
-        background-color: $faded-green;
-      }
-      &--radici {
         background-color: $faded-yellow;
       }
-      &--pausa {
+      &--radici {
         background-color: $faded-brown;
       }
+      &--pausa {
+        background-color: $faded-red;
+      }
       &--pensieri {
-        background-color: $faded-purple;
+        background-color: $faded-green;
       }
     }
 
     &__title {
       padding-top: 1rem;
+      padding-bottom: 1rem;
 
       & a {
         color: $primary;

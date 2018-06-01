@@ -1,90 +1,76 @@
 <template>
-  <header>
+  <div>
+    <h3 class="list-header subtitle">Città</h3>
     <div class="columns is-multiline">
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--gusti">
           <div class="category-grid__image category-grid__image--gusti">
-            <img :src="LogoGusti" alt="">
+            <img :src="pordenone" alt="">
           </div>
           <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Gusti della Terra</nuxt-link>
-          </div>
-          <div class="category-grid__content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae.</p>
+            <nuxt-link to="/">Pordenone</nuxt-link>
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--voli">
           <div class="category-grid__image category-grid__image--voli">
-            <img :src="LogoVoli" alt="">
+            <img :src="udine" alt="">
           </div>
           <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Voli sul territorio</nuxt-link>
-          </div>
-          <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptate.
+            <nuxt-link to="/">Udine</nuxt-link>
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--radici">
           <div class="category-grid__image category-grid__image--radici">
-            <img :src="LogoRadici" alt="">
+            <img :src="trieste" alt="">
           </div>
           <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Radici nel tempo</nuxt-link>
-          </div>
-          <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, rerum?
+            <nuxt-link to="/">Trieste</nuxt-link>
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--pausa">
           <div class="category-grid__image category-grid__image--pausa">
-            <img :src="LogoPausa" alt="">
+            <img :src="gorizia" alt="">
           </div>
           <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Pausa caffè</nuxt-link>
-          </div>
-          <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptatum.
+            <nuxt-link to="/">Gorizia</nuxt-link>
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-half has-text-centered">
         <div class="category-grid category-grid--pensieri">
           <div class="category-grid__image category-grid__image--pensieri">
-            <img :src="LogoPensieri" alt="">
+            <img :src="treviso" alt="">
           </div>
           <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Pensieri tra le pagine</nuxt-link>
-          </div>
-          <div class="category-grid__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, qui.
+            <nuxt-link to="/">Treviso</nuxt-link>
           </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
-  import LogoGusti from '../../assets/logos_category/loppure-gusti-della-terra.svg';
-  import LogoPausa from '../../assets/logos_category/loppure-pausa-caffe.svg';
-  import LogoRadici from '../../assets/logos_category/loppure-radici-nel-tempo.svg';
-  import LogoVoli from '../../assets/logos_category/loppure-voli-sul-territorio.svg';
-  import LogoPensieri from '../../assets/logos_category/loppure-pensieri-tra-le-pagine.svg';
+  import gorizia from  '../../assets/logos_city/citta-gorizia.svg'
+  import pordenone from  '../../assets/logos_city/citta-pordenone.svg'
+  import treviso from  '../../assets/logos_city/citta-treviso.svg'
+  import trieste from  '../../assets/logos_city/citta-trieste.svg'
+  import udine from  '../../assets/logos_city/citta-udine.svg'
 
   export default {
     data() {
       return {
-        LogoGusti,
-        LogoPausa,
-        LogoRadici,
-        LogoVoli,
-        LogoPensieri
+        gorizia,
+        pordenone,
+        treviso,
+        trieste,
+        udine
       }
     }
   }
@@ -94,7 +80,6 @@
   @import "../../style/main";
 
   .column {
-    padding: 2rem;
   }
 
   .category-grid {
@@ -103,16 +88,17 @@
     background-color: white;
 
     &:hover .category-grid__image img {
-      transform: scale(1.2);
+      transform: scale(2);
     }
 
     &__image {
+      min-height: 75px;
+      overflow: hidden;
       display: block;
 
       & img {
-        max-width: 60px;
-        margin: 1rem 0;
-        transition: transform .3s ease-in-out;
+        margin: 1rem;
+        transition: transform 3s ease-in-out;
       }
 
       &--gusti {
@@ -134,6 +120,7 @@
 
     &__title {
       padding-top: 1rem;
+      padding-bottom: 1rem;
 
       & a {
         color: $primary;

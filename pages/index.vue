@@ -9,6 +9,7 @@
             <article>fdsf</article>
             <article>fdsfds</article>
           </div>
+          <!--<div class="column is-one-fifth"><sidebar-right/></div>-->
         </main>
       </div>
   </div>
@@ -17,11 +18,13 @@
 <script>
   import TheHader from '../components/ui/TheCategoryGrid.vue';
   import SidebarLeft from '../components/layout/SidebarLeft'
+  import SidebarRight from '../components/layout/SidebarRight'
 
 export default {
   components: {
     TheHader,
-    SidebarLeft
+    SidebarLeft,
+    SidebarRight
   }
 }
 </script>
