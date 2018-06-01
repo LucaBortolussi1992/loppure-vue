@@ -3,7 +3,7 @@
       <div class="container is-widescreen">
         <the-hader/>
         <main class="columns">
-          <aside class="column is-one-fifth">fdsfdsf</aside>
+          <div class="column is-one-fifth"><sidebar-left/></div>
           <div class="column is-three-fifths article-box">
             <article>Cia</article>
             <article>fdsf</article>
@@ -16,16 +16,18 @@
 
 <script>
   import TheHader from '../components/ui/TheCategoryGrid.vue';
+  import SidebarLeft from '../components/layout/SidebarLeft'
 
 export default {
   components: {
-    TheHader
+    TheHader,
+    SidebarLeft
   }
 }
 </script>
 
-<style>
-  .is-red{
-    background-color: red;
+<style lang="scss" scoped>
+  main {
+    padding-top: 3rem;
   }
 </style>

@@ -1,6 +1,6 @@
-@import "_variables";
+@import "variables";
 
-@import "_typography";
+@import "typography";
 
 // 3. Import the rest of Bulma
 @import "~bulma/sass/base/_all";
@@ -8,8 +8,12 @@
 @import "~bulma/sass/layout/_all";
 @import "~bulma/sass/elements/container";
 
-@import "_navbar";
-@import "_category";
+@import "navbar";
+@import "category";
+
+// element
+@import "element/list-header";
+@import "element/whitespace";
 
 html {
   font-size: 14px;

@@ -116,19 +116,19 @@
       }
 
       &--gusti {
-        background-color: rgba(206, 107, 107, 0.35);
+        background-color: $faded-red;
       }
       &--voli {
-        background-color: rgba(169, 196, 118, 0.35);
+        background-color: $faded-green;
       }
       &--radici {
-        background-color: rgba(224, 212, 160, 0.35);;
+        background-color: $faded-yellow;
       }
       &--pausa {
-        background-color: rgba(188,162,145,0.35);
+        background-color: $faded-brown;
       }
       &--pensieri {
-        background-color: rgba(196,167,216,0.35);
+        background-color: $faded-purple;
       }
     }
 

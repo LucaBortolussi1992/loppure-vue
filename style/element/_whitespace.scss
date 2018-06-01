@@ -1,0 +1,14 @@
+.whitespace {
+  height: 0;
+
+  &--xxx-small {}
+  &--xx-small {}
+  &--x-small {}
+  &--small {}
+  &--normal {
+    margin: 2rem;}
+  &--big {}
+  &--x-big {}
+  &--xx-big {}
+  &--xxx-big {}
+}
