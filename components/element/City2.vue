@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <h3 class="list-header subtitle">Città</h3>
     <div class="columns is-multiline">
       <div class="column
@@ -68,7 +68,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

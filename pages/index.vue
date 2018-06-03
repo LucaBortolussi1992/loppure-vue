@@ -4,10 +4,7 @@
         <the-hader/>
         <main class="columns">
           <div class="column is-3-fullhd is-3-widescreen"><sidebar-left/></div>
-          <div class="column
-          is-offset-1-widescreen
-          is-4-widescreen
-          article-box">
+          <div class="column is-offset-1-widescreen is-4-widescreen article-box">
             <card/>
             <hr class="whitespace whitespace--normal">
             <card/>

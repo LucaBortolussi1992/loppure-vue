@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <h3 class="list-header subtitle">Rubriche</h3>
     <div class="columns is-multiline">
       <div class="column is-half has-text-centered">
@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

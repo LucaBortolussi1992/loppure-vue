@@ -3,8 +3,11 @@
     <div class="columns is-multiline">
       <div class="column is-one-fifths has-text-centered">
         <div class="category-grid category-grid--gusti">
+
           <div class="category-grid__image category-grid__image--gusti">
-            <img :src="LogoGusti" alt="">
+            <figure class="image is-1by1">
+              <img :src="LogoGusti" alt="">
+            </figure>
           </div>
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Gusti della Terra</nuxt-link>
@@ -16,7 +19,7 @@
       </div>
       <div class="column is-one-fifths has-text-centered">
         <div class="category-grid category-grid--voli">
-          <div class="category-grid__image category-grid__image--voli">
+          <div class="category-grid__image category-grid__image--voli">a
             <img :src="LogoVoli" alt="">
           </div>
           <div class="category-grid__title title is-5">
@@ -156,6 +159,7 @@
     }
 
     &__content {
+      display: none;
       background-color: $white;
       padding-bottom: 1rem;
     }
