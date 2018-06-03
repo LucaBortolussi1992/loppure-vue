@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <the-navbar/>
+    <nuxt/>
     <div class="container is-widescreen">
-      <nuxt/>
     </div>
   </div>
 </template>

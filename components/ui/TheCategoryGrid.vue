@@ -1,11 +1,10 @@
 <template>
-  <header>
+  <div>
     <div class="columns is-multiline">
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--gusti">
-
           <div class="category-grid__image category-grid__image--gusti">
-            <figure class="image is-1by1">
+            <figure class="image is-4by3">
               <img :src="LogoGusti" alt="">
             </figure>
           </div>
@@ -17,10 +16,12 @@
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--voli">
-          <div class="category-grid__image category-grid__image--voli">a
-            <img :src="LogoVoli" alt="">
+          <div class="category-grid__image category-grid__image--voli">
+            <figure class="image is-4by3">
+              <img :src="LogoVoli" alt="">
+            </figure>
           </div>
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Voli sul territorio</nuxt-link>
@@ -30,10 +31,12 @@
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--radici">
           <div class="category-grid__image category-grid__image--radici">
-            <img :src="LogoRadici" alt="">
+            <figure class="image is-4by3">
+              <img :src="LogoRadici" alt="">
+            </figure>
           </div>
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Radici nel tempo</nuxt-link>
@@ -43,10 +46,12 @@
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--pausa">
           <div class="category-grid__image category-grid__image--pausa">
-            <img :src="LogoPausa" alt="">
+            <figure class="image is-4by3">
+              <img :src="LogoPausa" alt="">
+            </figure>
           </div>
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Pausa caffè</nuxt-link>
@@ -56,10 +61,12 @@
           </div>
         </div>
       </div>
-      <div class="column is-one-fifths has-text-centered">
+      <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--pensieri">
           <div class="category-grid__image category-grid__image--pensieri">
-            <img :src="LogoPensieri" alt="">
+            <figure class="image is-4by3">
+              <img :src="LogoPensieri" alt="">
+            </figure>
           </div>
           <div class="category-grid__title title is-5">
             <nuxt-link to="/">Pensieri tra le pagine</nuxt-link>
@@ -70,7 +77,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -114,7 +121,7 @@
 
       & img {
         max-width: 60px;
-        margin: 1rem 0;
+        margin: 0 auto;
         transition: transform .3s ease-in-out;
       }
 
