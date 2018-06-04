@@ -5,7 +5,7 @@
       <div class="container">
         <main class="columns">
           <div class="column is-2-fullhd is-2-widescreen">
-            <!--<sidebar-left/>-->
+            <sidebar-left/>
           </div>
           <div class="column is-8-widescreen article-box">
             <card/>

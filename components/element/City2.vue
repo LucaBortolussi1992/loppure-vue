@@ -6,9 +6,9 @@
         <div class="category-grid category-grid--gusti">
           <div class="category-grid__image category-grid__image--gusti">
             <img :src="pordenone" alt="">
-          </div>
-          <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Pordenone</nuxt-link>
+            <div class="category-grid__title title is-5">
+              <nuxt-link to="/">Pordenone</nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -16,9 +16,9 @@
         <div class="category-grid category-grid--voli">
           <div class="category-grid__image category-grid__image--voli">
             <img :src="udine" alt="">
-          </div>
-          <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Udine</nuxt-link>
+            <div class="category-grid__title title is-5">
+              <nuxt-link to="/">Udine</nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -26,9 +26,9 @@
         <div class="category-grid category-grid--radici">
           <div class="category-grid__image category-grid__image--radici">
             <img :src="trieste" alt="">
-          </div>
-          <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Trieste</nuxt-link>
+            <div class="category-grid__title title is-5">
+              <nuxt-link to="/">Trieste</nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -36,9 +36,9 @@
         <div class="category-grid category-grid--pausa">
           <div class="category-grid__image category-grid__image--pausa">
             <img :src="gorizia" alt="">
-          </div>
-          <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Gorizia</nuxt-link>
+            <div class="category-grid__title title is-5">
+              <nuxt-link to="/">Gorizia</nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -46,9 +46,9 @@
         <div class="category-grid category-grid--pensieri">
           <div class="category-grid__image category-grid__image--pensieri">
             <img :src="treviso" alt="">
-          </div>
-          <div class="category-grid__title title is-5">
-            <nuxt-link to="/">Treviso</nuxt-link>
+            <div class="category-grid__title title is-5">
+              <nuxt-link to="/">Treviso</nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -120,7 +120,6 @@
     }
 
     &__title {
-      padding-top: 1rem;
       padding-bottom: 1rem;
 
       & a {
