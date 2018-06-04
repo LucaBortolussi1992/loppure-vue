@@ -1,11 +1,13 @@
 <template>
     <div id="home">
       <header-test/>
-      <!--<the-hader/>-->
+      <section class="section">
+        <the-hader/>
+      </section>
       <div class="container">
         <main class="columns">
           <div class="column is-2-fullhd is-2-widescreen">
-            <sidebar-left/>
+            <!--<sidebar-left/>-->
           </div>
           <div class="column is-8-widescreen article-box">
             <card/>
@@ -15,7 +17,7 @@
             <card/>
           </div>
           <div class="column is-2-widescreen">
-            <sidebar-right/>
+            <!--<sidebar-right/>-->
           </div>
         </main>
       </div>

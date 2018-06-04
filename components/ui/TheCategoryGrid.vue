@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="container">
     <div class="columns is-multiline">
       <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--gusti">
           <div class="category-grid__image category-grid__image--gusti">
-            <figure class="image is-4by3">
+            <figure class="image">
               <img :src="LogoGusti" alt="">
             </figure>
           </div>
@@ -14,12 +14,13 @@
           <div class="category-grid__content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae.</p>
           </div>
+          <a class="category-grid__link category-grid__link--gusti has-text-centered">Vai alla Rubrica</a>
         </div>
       </div>
       <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--voli">
           <div class="category-grid__image category-grid__image--voli">
-            <figure class="image is-4by3">
+            <figure class="image">
               <img :src="LogoVoli" alt="">
             </figure>
           </div>
@@ -34,7 +35,7 @@
       <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--radici">
           <div class="category-grid__image category-grid__image--radici">
-            <figure class="image is-4by3">
+            <figure class="image">
               <img :src="LogoRadici" alt="">
             </figure>
           </div>
@@ -49,7 +50,7 @@
       <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--pausa">
           <div class="category-grid__image category-grid__image--pausa">
-            <figure class="image is-4by3">
+            <figure class="image">
               <img :src="LogoPausa" alt="">
             </figure>
           </div>
@@ -64,7 +65,7 @@
       <div class="column is-one-fifth has-text-centered">
         <div class="category-grid category-grid--pensieri">
           <div class="category-grid__image category-grid__image--pensieri">
-            <figure class="image is-4by3">
+            <figure class="image">
               <img :src="LogoPensieri" alt="">
             </figure>
           </div>
@@ -104,11 +105,12 @@
   @import "../../style/main";
 
   .column {
-    padding: 2rem;
+    /*padding: 2rem;*/
   }
 
   .category-grid {
-    border-radius: 8px;
+    border-radius: 3px;
+    padding: 2rem;
     overflow: hidden;
     background-color: white;
 
@@ -118,6 +120,9 @@
 
     &__image {
       display: block;
+      max-width: 5rem;
+      padding: 1rem;
+      margin: 0 auto;
 
       & img {
         max-width: 60px;
@@ -143,7 +148,7 @@
     }
 
     &__title {
-      padding-top: 1rem;
+      padding-top: 3rem;
 
       & a {
         color: $primary;
@@ -166,9 +171,28 @@
     }
 
     &__content {
-      display: none;
+      /*display: none;*/
       background-color: $white;
       padding-bottom: 1rem;
+    }
+
+    &__link {
+      text-decoration: underline;
+      &--gusti {
+        color: $red;
+      }
+      &--voli {
+        color: $green;
+      }
+      &--radici {
+        color: $yellow;
+      }
+      &--pausa {
+        color: $brown;
+      }
+      &--pensieri {
+        color: $purple;
+      }
     }
 
   }
