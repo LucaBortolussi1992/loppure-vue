@@ -2,19 +2,20 @@
     <div id="home">
       <header-test/>
       <!--<the-hader/>-->
-      <div class="">
+      <div class="container">
         <main class="columns">
-          <div class="column is-2-fullhd is-3-widescreen">
+          <div class="column is-2-fullhd is-2-widescreen">
             <!--<sidebar-left/>-->
           </div>
-          <div class="column is-offset-1-widescreen is-6-widescreen article-box">
+          <div class="column is-8-widescreen article-box">
             <card/>
             <hr class="whitespace whitespace--normal">
             <card/>
+            <hr class="whitespace whitespace--normal">
             <card/>
           </div>
-          <div class="column is-offset-1-widescreen is-2-widescreen">
-            <!--<sidebar-right/>-->
+          <div class="column is-2-widescreen">
+            <sidebar-right/>
           </div>
         </main>
       </div>

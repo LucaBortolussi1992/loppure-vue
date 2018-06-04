@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="media-right">
-          <p class="subtitle is-6">Pausa caffè, Pordenone</p>
+          <p class="subtitle is-6">Pausa caffè  |  12/02/2018</p>
         </div>
         <div class="media-bottom">
           <p class="subtitle is-6">Pordenone</p>
@@ -22,9 +22,9 @@
       </div>
     </div>
 
-    <div class="card-image column">
+    <div class="card-image column is-two-fifths">
       <figure>
-        <img src="http://www.loppure.it/wp-content/uploads/2018/05/Notte-stellata--600x338.jpg" alt="Placeholder image">
+        <img src="http://www.loppure.it/wp-content/uploads/2018/05/margaret-atwood-600x300.jpg" alt="Placeholder image">
       </figure>
     </div>
   </div>
@@ -47,10 +47,13 @@
   @import "../../style/variables";
 
   .card {
+    margin-left: 0;
+    margin-right: 0;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 3px;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: none;
 
     &:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -66,6 +69,13 @@
 
     &-image {
       padding: 0;
+      transition: all .8s ease-in-out;
+      &:hover {
+        width: 100%;
+        transform: translateX(calc(-50% - 2rem));
+        padding-right: 4rem;
+        margin-right: 6rem;
+      }
 
       & figure {
         height: 100%;
@@ -74,7 +84,7 @@
         width: auto;
         height: 100%;
         object-fit: cover;
-        object-position: 0 0;
+        /*object-position: 0 0;*/
       }
     }
   }
@@ -87,9 +97,14 @@
       top: 0;
       left: 0;
       width: 3rem;
+      padding: 0.5rem;
       background-color: $faded-brown;
       border-radius: 50%;
       overflow: hidden;
+      transition: transform 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.5);
+      }
     }
 
     &-right {
